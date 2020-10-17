@@ -50,7 +50,7 @@
       "commit-msg": "commitlint -c .commitlintrc.js -E HUSKY_GIT_PARAMS"
     }
   },
-  "ling-staged": {
+  "lint-staged": {
     "*.{ts,tsx,js}": [
       "eslint -c .eslintrc.js"
     ],
