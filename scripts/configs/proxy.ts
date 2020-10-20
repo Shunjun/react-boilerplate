@@ -1,8 +1,4 @@
-import { Options } from 'http-proxy-middleware/dist/types';
-
-interface ProxyTable {
-  [path: string]: Options;
-}
+import { ProxyTable } from '../typings/server';
 
 const proxyTable: ProxyTable = {
   // 示例配置

@@ -11,11 +11,11 @@ compiler.run((error, stats) => {
     return;
   }
 
-  const prodStatsOpts = {
+  const analyzeStatsOpts = {
     preset: 'normal',
-    modules: ENABLE_ANALYZE,
+    modules: true,
     colors: true,
   };
 
-  console.log(stats!.toString(prodStatsOpts));
+  console.log(stats!.toString(ENABLE_ANALYZE ? analyzeStatsOpts : 'minimal'));
 });

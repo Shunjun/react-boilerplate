@@ -25,7 +25,7 @@ function openBrowser(address: string) {
         }index.html`;
       }
     }
-    // 添加WebpackOpenBrowser插件
+    // 添加WebpackOpenBrowser插件,打开浏览器窗口
     devConfig.plugins!.push(new WebpackOpenBrowser({ url: openAddress }));
 
     // let hadOpened = false
